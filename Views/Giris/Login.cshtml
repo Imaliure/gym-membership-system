@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Giriþ Yap";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" action="/Giris/Login">
+    <div class="form-group">
+        <label for="Username">Kullanýcý Adý</label>
+        <input type="text" class="form-control" id="Username" name="Username" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Password">Þifre</label>
+        <input type="password" class="form-control" id="Password" name="Password" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Giriþ Yap</button>
+</form>
