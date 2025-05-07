@@ -4,13 +4,13 @@ namespace SporSalonuUyeYonetim.Controllers
 {
     public class GirisController : Controller
     {
-        [HttpGet("/login")]
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
-        [HttpPost("/login")]
+        [HttpPost]
         public IActionResult Login(string username, string password)
         {
             if (username == "admin" && password == "admin123")
